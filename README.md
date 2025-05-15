@@ -30,7 +30,7 @@ Metoda ShowInfo vypisuje základní informace o jezdci
 
 Přetížená metoda ShowInfo(bool detailed) umožňuje zobrazit podrobné informace včetně zkušeností
 
-Splňuje podmínky zadání týkající se přetížených metod a kompozice objektů
+Splňuje zadání - přetížených metod a kompozice objektů
 
 
 - AbstractVehicle – Čistě abstraktní třída pro vozidla
