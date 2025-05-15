@@ -33,13 +33,28 @@ Přetížená metoda ShowInfo(bool detailed) umožňuje zobrazit podrobné infor
 Splňuje zadání - přetížených metod a kompozice objektů
 
 
+- Race – Simulace konkrétního závodu
+
+Uchovává seznam účastníků závodu v atributu vector<Racer> participants
+
+Obsahuje informaci o podmínkách trati v trackCondition
+
+Konstruktor Race(vector<Racer> r, string condition) inicializuje závodníky a stav trati
+
+Metoda StartRace() simuluje průběh závodu
+
+Metoda GetWinner() určuje vítěze na základě zkušeností a výkonu
+
+Splňuje zadání - práce s datovou strukturou závodníků
+
+
 - AbstractVehicle – Čistě abstraktní třída pro vozidla
 
 Slouží jako základní abstraktní třída, ze které dědí všechny typy vozidel
 
 Obsahuje pouze virtuální metody ShowInfo() a GetMaxSpeed()
 
-Splňuje zadání - čistě abstraktní třídy, dědičnosti a polymorfismu
+Splňuje zadání - čistě abstraktní třídy, dědičnosti 
 
 
 - Vehicle a jeho potomci – Hierarchie vozidel
@@ -50,7 +65,7 @@ Metody ShowInfo a GetMaxSpeed jsou virtuální, což umožňuje pozdní vazbu ov
 
 F1Car, RallyeCar, Motorcycle, DakarCar jsou odvozené třídy, které rozšiřují Vehicle o specifické atributy jako aerodynamika, off-road schopnosti
 
-Splňuje zadání - dědičnosti, pozdní vazby overriding a čistě abstraktní třídy
+Splňuje zadání - dědičnosti, pozdní vazby overriding
 
 
 - RaceEvent – Reprezentace závodu
